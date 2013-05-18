@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>AttackType</key>
+		<string>85</string>
+		<key>Group</key>
+		<string>0</string>
+		<key>ID</key>
+		<string>1</string>
+		<key>Image</key>
+		<string>/Users/NPC/Pictures/デジモンドット絵/Betamon.gif</string>
+		<key>Level</key>
+		<string>2</string>
+		<key>Name</key>
+		<string>ベタモン</string>
+		<key>NextDigimons</key>
+		<string>ヌメモン,20</string>
+		<key>SpeciesPower</key>
+		<string>330</string>
+		<key>Type</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>AttackType</key>
+		<string>27</string>
+		<key>Group</key>
+		<string>0</string>
+		<key>ID</key>
+		<string>2</string>
+		<key>Image</key>
+		<string>/Users/NPC/Pictures/デジモンドット絵/Agumon.gif</string>
+		<key>Level</key>
+		<string>2</string>
+		<key>Name</key>
+		<string>アグモン</string>
+		<key>NextDigimons</key>
+		<string></string>
+		<key>SpeciesPower</key>
+		<string>360</string>
+		<key>Type</key>
+		<string>2</string>
+	</dict>
+</array>
+</plist>
