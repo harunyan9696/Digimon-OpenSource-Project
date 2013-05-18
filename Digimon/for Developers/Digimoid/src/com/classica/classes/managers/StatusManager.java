@@ -11,7 +11,7 @@ public class StatusManager {
 	public final static int NIGHT = 2;
 
 	private static int getCurrentTimeArea(int current_time) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if(current_time>=400 && current_time<1200){
 			return MORNING;
 		}
@@ -34,7 +34,7 @@ public class StatusManager {
 	private int win_type;
 
 	private boolean battle() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.enemy_hit_pattern = new ArrayList<Integer>();
 		Digimon digimon = digimon_list.get(selected_index);
 		int power_me = digimon.getActual_power();
@@ -120,7 +120,7 @@ public class StatusManager {
 
 	public void calcurateAttackPatternForOfflineBattleWithShakeCount(
 			int shake_counter) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		String pattern1 = "1010000101010101010010101010101010101001010000001010101010101010101010101010101010101000100101000101011";
 		String pattern2 = "1001010101010111001011001100100101010101000000100010101010101010101010010010010101010101010100110101000";
@@ -188,7 +188,7 @@ public class StatusManager {
 
 	public void calcurateAttackPatternForOnlineBattleWithShakeCount(
 			int shake_counter) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		String pattern1 = "1010000101010101010010101010101010101001010000001010101010101010101010101010101010101000100101000101011";
 		String pattern2 = "1001010101010111001011001100100101010101000000100010101010101010101010010010010101010101010100110101000";
@@ -221,7 +221,7 @@ public class StatusManager {
 
 	public void calcurateAttackPatternForTrainingWithShakeCount(
 			int shake_counter) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		String pattern1 = "1010000101010101010010101010101010101001010000001010101010101010101010101010101010101000100101000101011";
 		String pattern2 = "1001010101010111001011001100100101010101000000100010101010101010101010010010010101010101010100110101000";
@@ -252,7 +252,7 @@ public class StatusManager {
 	}
 
 	public boolean canCareInjure() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.isIs_injured() == false || digimon.isIs_sleeping() == true){
 			return false;
@@ -263,7 +263,7 @@ public class StatusManager {
 	}
 
 	public boolean canCareSick() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.isIs_sick() == false || digimon.isIs_sleeping() == true){
 			return false;
@@ -274,12 +274,12 @@ public class StatusManager {
 	}
 
 	public boolean canDoJogress() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		return false;
 	}
 
 	public boolean canDoOfflineBattle() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.getDp()<=0 || digimon.isIs_sick() == true || digimon.isIs_injured() == true || (digimon.isIs_sleeping() == true && digimon.isIs_light_on() == false) || digimon.isBattle_enable() == false){
 			return false;
@@ -290,7 +290,7 @@ public class StatusManager {
 	}
 
 	public boolean canDoOnlineBattle() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.getDp()<=0 || digimon.isIs_sick() == true || digimon.isIs_injured() == true || (digimon.isIs_sleeping() == true && digimon.isIs_light_on() == false) || digimon.isBattle_enable() == false){
 			return false;
@@ -301,7 +301,7 @@ public class StatusManager {
 	}
 
 	public boolean canDoTraining() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if((digimon.getDp()<=0 && digimon.isDp_half() == false) || digimon.isIs_sick() == true || digimon.isIs_injured() == true || (digimon.isIs_sleeping() == true && digimon.isIs_light_on() == false)){
 			return false;
@@ -312,7 +312,7 @@ public class StatusManager {
 	}
 
 	public boolean canEatMeat() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		int eat_max_count = digimon.getMax_eat();
 		int current_hungry = digimon.getHungry();
@@ -336,7 +336,7 @@ public class StatusManager {
 	}
 
 	public boolean canEatProtein() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		boolean is_sleeping = digimon.isIs_sleeping();
 		boolean is_lighting = digimon.isIs_light_on();
@@ -353,13 +353,13 @@ public class StatusManager {
 	}
 
 	public boolean canOperate() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		return (digimon.isIs_egg() == false && digimon.isIs_living());
 	}
 
 	public void careInjure() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		digimon.setIs_injured(false);
 
@@ -372,7 +372,7 @@ public class StatusManager {
 	}
 
 	public void careSick() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		digimon.setIs_sick(false);
 
@@ -385,7 +385,7 @@ public class StatusManager {
 	}
 
 	public void changeSelected(int digimon_selection_index) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (digimon_selection_index >= 0
 				&& digimon_selection_index < this.digimon_list.size()) {
 			this.selected_index = digimon_selection_index;
@@ -401,7 +401,7 @@ public class StatusManager {
 	}
 
 	private boolean checkForProgress(int index) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(index);
 		float aptitude =0.0f;
 		int lifetype = 1;
@@ -464,7 +464,7 @@ public class StatusManager {
 	}
 
 	public void decideEnemy() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		int[] randoms = {(int) (Math.random()*521),(int) (Math.random()*521),(int) (Math.random()*521),(int) (Math.random()*521)};
 		for(int i = 0;i<randoms.length;i++){
 			if(randoms[i] == 521){
@@ -507,7 +507,7 @@ public class StatusManager {
 	}
 
 	private void doForceWakingUp() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		digimon.setIs_sleeping(false);
 		digimon.setHealth(digimon.getHealth()-2);
@@ -521,12 +521,12 @@ public class StatusManager {
 	}
 
 	public void doJogress() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 
 	}
 
 	public void doOfflineBattle() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		if(digimon.isIs_sleeping() == true && digimon.isIs_light_on() == true){
 			this.doForceWakingUp();
@@ -552,7 +552,7 @@ public class StatusManager {
 	}
 
 	public void doOnlineBattle() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(selected_index);
 		if (digimon.isIs_sleeping() == true && digimon.isIs_light_on() == true) {
 			this.doForceWakingUp();
@@ -587,7 +587,7 @@ public class StatusManager {
 	}
 
 	public void doReloadProcessingWithElapsedMinutesAndLastTime(int much, int from) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		for(int i = 0;i<much;i++){
 			this.updateStatusByMinutes(from);
 			if(from % 10 == 9){
@@ -612,7 +612,7 @@ public class StatusManager {
 	}
 
 	public void doTraining() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.isIs_sleeping() == true && digimon.isIs_light_on() == true){
 			this.doForceWakingUp();
@@ -637,7 +637,7 @@ public class StatusManager {
 	}
 
 	public void eatMeat() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.isIs_sleeping() == true && digimon.isIs_light_on() == true){
 			this.doForceWakingUp();
@@ -661,7 +661,7 @@ public class StatusManager {
 	}
 
 	public void eatProtein() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		if(digimon.isIs_sleeping() == true && digimon.isIs_light_on() == true){
 			this.doForceWakingUp();
@@ -786,7 +786,7 @@ public class StatusManager {
 	}
 
 	private void progress(int next_digimon, int index) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = this.digimon_list.get(index);
 		Element ele = this.input_manager.referDatabaseFromId(next_digimon);
 		digimon.setDigimon_id(ele.getId());
@@ -798,8 +798,11 @@ public class StatusManager {
 		digimon.setActual_power((int) (digimon.getHidden_power()+digimon.getPotential_power()));
 		digimon.setDotPattern(ele.getDot_pattern());
 		digimon.setAttack_type(ele.getAttack_type());
-		int r = (int) (Math.random()*30*digimon.getActual_power());
-		r %=25;
+		int r = 0;
+		while(r== 0){r = (int) (Math.random()*30*(digimon.getActual_power()+1));
+			r %=25;
+		}
+		
 		digimon.setPendulum_type(r);
 		if(digimon.getPendulum_type() == 0){
 			digimon.setPendulum_type(1);
@@ -917,7 +920,7 @@ public class StatusManager {
 		Digimon digimon = this.digimon_list.get(selected_index);
 		digimon.setIs_living(true);
 		System.out.println("set true because recovery");
-		//digimon.setIs_egg(true);
+		digimon.setIs_egg(true);
 		digimon.setEgg_id(99999);
 		digimon.setDm(0);
 		digimon.setLife(100,"StatusManager.recovery()");
@@ -968,7 +971,7 @@ public class StatusManager {
 			digimon.setDotPattern(element.getDot_pattern());
 			digimon.setAttack_type(element.getAttack_type());
 
-			int random2 = (int)(Math.random())*30*digimon.getActual_power();
+			int random2 = (int)(Math.random())*30*(digimon.getActual_power()+1);
 			random2%=25;
 			digimon.setPendulum_type(random2);
 		}
@@ -987,9 +990,12 @@ public class StatusManager {
 			digimon.setDotPattern(element.getDot_pattern());
 			digimon.setAttack_type(element.getAttack_type());
 
-			int random2 = (int)(Math.random())*30*digimon.getActual_power();
+			int random2 = (int)(Math.random())*30*(digimon.getActual_power()+1);
 			random2%=25;
 			digimon.setPendulum_type(random2);
+		}
+		if(digimon.getPendulum_type() == 0){
+			digimon.setPendulum_type(1);
 		}
 		System.out.println("\n\nrecovery\n\n"+digimon.toString());
 	}
@@ -1171,7 +1177,7 @@ public class StatusManager {
 	}
 
 	public void turnLight(boolean on) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		digimon.setIs_light_on(on);
 		int sleeptime = digimon.getSleep_time();
@@ -1196,7 +1202,7 @@ public class StatusManager {
 	}
 
 	public void updateStatusByMinutes(int current_time2) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		System.out.println("update status :"+current_time2);
 		this.current_time = current_time2;
 		for(int i = 0;i<this.digimon_list.size();i++){
@@ -1330,7 +1336,7 @@ public class StatusManager {
 	}
 
 	public void washUnko() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Digimon digimon = digimon_list.get(selected_index);
 		digimon.setNumber_of_unko(0,2);
 		digimon.setReaction(true);

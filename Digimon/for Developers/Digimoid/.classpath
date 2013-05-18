@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry kind="lib" path="/Users/ychiba.kit.hlab/Documents/plistreader/plistreader-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/ychiba.kit.hlab/Documents/plistreader/xercesImpl.jar"/>
-	<classpathentry kind="lib" path="/Users/ychiba.kit.hlab/Documents/plistreader/xml-apis.jar"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/Users/yuki/Projects/Git/Digimon OpenSource Project/Digimon/for Developers/Digimoid/external_libraries/plistreader-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/yuki/Projects/Git/Digimon OpenSource Project/Digimon/for Developers/Digimoid/external_libraries/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/Users/yuki/Projects/Git/Digimon OpenSource Project/Digimon/for Developers/Digimoid/external_libraries/xml-apis.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

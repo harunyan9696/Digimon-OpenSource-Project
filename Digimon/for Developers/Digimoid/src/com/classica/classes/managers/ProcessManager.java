@@ -232,7 +232,7 @@ public class ProcessManager{
 	}
 
 	private void buttonPressedInBattleState(int button) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 		if (button == 1) {
 			if (this.internal_state == BATTLE_SELECT_ONLINE_BATTLE) {
@@ -277,7 +277,7 @@ public class ProcessManager{
 	}
 
 	private void buttonPressedInCareState(int button) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 		if (button == 1) {
 			if (this.internal_state == CARE_SELECT_INJURE) {
@@ -323,7 +323,7 @@ public class ProcessManager{
 
 	private void buttonPressedInLightState(int button) {
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (button == 1) {
 			if (this.internal_state == LIGHT_SELECT_ON) {
 				this.internal_state++;
@@ -350,7 +350,7 @@ public class ProcessManager{
 	}
 
 	private void buttonPressedInMealState(int button) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 		if (button == 1) {
 			if (this.internal_state == MEAL_SELECT_MEAT) {
@@ -396,7 +396,7 @@ public class ProcessManager{
 	}
 
 	private void buttonPressedInStatusState(int button) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 		if (button == 1) {
 			if (this.internal_state != STATUS_TYPE_AND_FLAG) {
@@ -412,7 +412,7 @@ public class ProcessManager{
 	}
 
 	private void buttonPressedInTrainingState(int button) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 		if (button == 1) {
 			if (this.internal_state == TRAINING_SELECT_TRAINING) {
@@ -457,7 +457,7 @@ public class ProcessManager{
 	}
 
 	private void buttonPressedInUnkoState(int button) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 		if (button == 3) {
 			this.status_manager.washUnko();
@@ -465,7 +465,7 @@ public class ProcessManager{
 	}
 
 	private void catchEventInBleedingState(Event pop) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (pop.getEventType() == TouchEvent.EVENT_TOUCH) {
 			TouchEvent touch = (TouchEvent) pop;
 			int state = touch.getState();
@@ -782,12 +782,12 @@ public class ProcessManager{
 	}
 
 	private void showAleat() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		parent.showAleat();
 	}
 
 	private void catchEventInMaintitleState(Event pop) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (pop.getEventType() == TouchEvent.EVENT_TOUCH) {
 			TouchEvent touch = (TouchEvent) pop;
 			if (touch.getState() == TouchEvent.TOUCH_RELEASED) {
@@ -805,7 +805,7 @@ public class ProcessManager{
 	}
 
 	private void catchEventInSelectionState(Event pop) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (pop.getEventType() == TouchEvent.EVENT_TOUCH) {
 			TouchEvent touch = (TouchEvent) pop;
 			int x = touch.getObject().x;
@@ -868,7 +868,7 @@ public class ProcessManager{
 	}
 
 	private void firstAndThirdButtonPressed() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (this.status_manager.isDieing() == true) {
 			soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
 			this.status_manager.recovery();
@@ -887,7 +887,7 @@ public class ProcessManager{
 	}
 
 	private void firstButtonPressed() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		System.out.println("first button pressed");
 		if (this.status_manager.canOperate() == true) {
 			if (this.internal_state == PM_DEFAULT_STATE) {
@@ -922,7 +922,7 @@ public class ProcessManager{
 	}
 
 	private void goSelectonState() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.state = PM_DIGIMON_SELECTION_STATE;
 		this.input_manager.requestCount(WALK_COUNT);
 		this.icon_selection_index = 0;
@@ -930,7 +930,7 @@ public class ProcessManager{
 	}
 
 	private void secondButtonPressed() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (this.status_manager.canOperate() == true) {
 			if (this.internal_state == PM_DEFAULT_STATE) {
 				soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
@@ -992,7 +992,7 @@ public class ProcessManager{
 	}
 
 	private void thirdButtonPressed() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (this.status_manager.canOperate() == true) {
 			if (this.internal_state == PM_DEFAULT_STATE) {
 				soundPool.play(pich_id, 1.0F, 1.0F, 1, 0, 1.0F);
@@ -1108,7 +1108,7 @@ public class ProcessManager{
 	}
 
 	private void updateTime() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		// String current_time =
 		// time.year+"/"+time.month+"/"+time.monthDay+"/"+time.hour+"/"+time.minute+"/"+time.second;
 		int h = this.time.hour;
@@ -1185,7 +1185,7 @@ public class ProcessManager{
 	}
 
 	public void wakeup() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		File xmlfile = new File(Environment.getExternalStorageDirectory() + File.separator +"digimon"+File.separator+"savedata.xml");
 		FileInputStream fileis;
 		this.digimon_list = new ArrayList<Digimon>();
@@ -1486,13 +1486,13 @@ public class ProcessManager{
 				this.status_manager.doReloadProcessingWithElapsedMinutesAndLastTime(sub_time+day_sub*(24*60),hour*100+minute);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		} catch (XmlPullParserException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		}
 		System.out.println(this.digimon_list.size());
@@ -1504,7 +1504,7 @@ public class ProcessManager{
 
 	public void sleep() {
 		System.out.println("sleep");
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		XmlSerializer serializer = Xml.newSerializer();
 		System.out.println(Environment.getDataDirectory().getPath()+"/savedata.xml");
 		File xmlfile = new File(Environment.getExternalStorageDirectory() + File.separator +"digimon"+File.separator+"savedata.xml");
@@ -1517,7 +1517,7 @@ public class ProcessManager{
 			try {
 				xmlfile.createNewFile();
 			} catch (IOException e2) {
-				// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+				// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 				e2.printStackTrace();
 			}
 		}
@@ -1525,7 +1525,7 @@ public class ProcessManager{
 		try {
 			fileos = new FileOutputStream(xmlfile);
 		} catch (FileNotFoundException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		}
 		try {
@@ -1557,18 +1557,18 @@ public class ProcessManager{
 			serializer.flush();
 			fileos.close();
 		} catch (IllegalArgumentException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		} catch (IllegalStateException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			e.printStackTrace();
 		}
 	}
 	public void ok_button_pressed(String text) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.alert_ok = true;
 	    String arg = text;
 	    if(arg.length() > 0){
@@ -1597,19 +1597,19 @@ public class ProcessManager{
 	}
 
 	private void showAlertForHost() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		parent.showAlertForHost();
 	}
 
 	public void hostalertClicked() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.internal_state = BATTLE_ONLINE_ENCOUNT;
         this.input_manager.destoryCount();
         this.input_manager.requestCount(ENCOUNT_ANIMATION_COUNT);
 	}
 
 	public void cancled() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.internal_state =PM_NO_THANKS;//self->internal_state = PM_NO_THANKS;
         this.input_manager.destoryCount();///[self->input_manager destroy_Count];
         this.input_manager.requestCount(NO_THANKS_COUNT);//[self->input_manager request_Count:NO_THANKS_COUNT];

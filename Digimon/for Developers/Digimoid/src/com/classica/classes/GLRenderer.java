@@ -3,6 +3,7 @@ package com.classica.classes;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
+import java.util.Calendar;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -59,25 +60,40 @@ public class GLRenderer implements Renderer {
 	private int sub_width;
 	private int height;
 	private int sub_height;
+	
+	private Calendar calender;
 
 	public GLRenderer(Context context) {
 		this.context = context;
 		initializeResource();
 
 		this.texture = new int[14];
+		
+		calender = Calendar.getInstance();
 	}
 
 	@Override
 	public void onDrawFrame(GL10 gl) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		// System.out.println("renderer on draw frame");
+		long time1 = calender.getTimeInMillis();
 		this.updateStatus();
 		this.drawStatus(gl);
+		long time2 = calender.getTimeInMillis();
+		long sub = time2 - time1;
+		if(sub < 25){
+			try {
+				Thread.sleep(25-sub);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 	@Override
 	public void onSurfaceChanged(GL10 gl, int width, int height) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.width = width;
 		this.height = height;
 		this.manager.setWindow_width(width);
@@ -166,7 +182,7 @@ public class GLRenderer implements Renderer {
 
 	@Override
 	public void onSurfaceCreated(GL10 gl, EGLConfig conf) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		gl.glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
 
 		gl.glEnable(GL10.GL_DEPTH_TEST);
@@ -252,7 +268,7 @@ public class GLRenderer implements Renderer {
 	}
 
 	private void initializeResource() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.maintitle_image = BitmapFactory.decodeResource(
 				context.getResources(), R.drawable.maintitielogo);
 		this.big_button_image = BitmapFactory.decodeResource(
@@ -313,9 +329,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[0]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.frame_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 		} else if (this.application_state == ProcessManager.PM_DIGIMON_SELECTION_STATE) {
 			gl.glActiveTexture(GL10.GL_TEXTURE0);
@@ -326,9 +342,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[5]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.frame_panel_top_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 			this.drawDot(gl);
@@ -339,7 +355,7 @@ public class GLRenderer implements Renderer {
 	}
 
 	private void drawDot(GL10 gl) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.selected_digimon.generateDrawPart(this.bleeding_state, this.counter);
 		gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 		gl.glDisable(GL10.GL_TEXTURE_2D);
@@ -377,7 +393,7 @@ public class GLRenderer implements Renderer {
 	}
 
 	private void reloadTextureOfFrame(GL10 gl) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[1]);
 		GLUtils.texImage2D(GL10.GL_TEXTURE_2D, 0, this.body_image, 0);
 		gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER,
@@ -548,9 +564,9 @@ public class GLRenderer implements Renderer {
 		gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[1]);
 		gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 		gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.frame_panel_top_uvs);
-		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																			// GL‚É•R•t‚¯
+		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																			// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 		gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 
 		gl.glPushMatrix();
@@ -560,9 +576,9 @@ public class GLRenderer implements Renderer {
 		gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[4]);
 		gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 		gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																			// GL‚É•R•t‚¯
+		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																			// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 		gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 		gl.glPopMatrix();
 
@@ -573,9 +589,9 @@ public class GLRenderer implements Renderer {
 		gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[2]);
 		gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 		gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.frame_panel_top_uvs);
-		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																			// GL‚É•R•t‚¯
+		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																			// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 		gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 
 		gl.glActiveTexture(GL10.GL_TEXTURE0);
@@ -583,16 +599,16 @@ public class GLRenderer implements Renderer {
 		gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[3]);
 		gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 		gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.frame_panel_top_uvs);
-		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																			// GL‚É•R•t‚¯
+		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.frame_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																			// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 		gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 		gl.glPopMatrix();
 		this.drawIcons(gl);
 	}
 
 	private void drawIcons(GL10 gl) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		if (this.icon_selection_index == 1) {
 			gl.glPushMatrix();
 			gl.glTranslatef(-0.5f, -0.35f, -5.0f);
@@ -602,9 +618,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[6]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -617,9 +633,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[7]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -632,9 +648,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[8]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -647,9 +663,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[9]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -662,9 +678,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[10]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -677,9 +693,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[11]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -692,9 +708,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[12]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}
@@ -707,9 +723,9 @@ public class GLRenderer implements Renderer {
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, texture[13]);
 			gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.back_panel_uvs);
-			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ’¸“_ƒoƒbƒtƒ@‚Ì—LŒø‰»
-			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ’¸“_ƒoƒbƒtƒ@‚ğOpen
-																				// GL‚É•R•t‚¯
+			gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½
+			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.back_panel_vertices);// ï¿½ï¿½ï¿½_ï¿½oï¿½bï¿½tï¿½@ï¿½ï¿½Open
+																				// GLï¿½ï¿½ï¿½Rï¿½tï¿½ï¿½
 			gl.glDrawArrays(GL10.GL_TRIANGLES, 0, 6);
 			gl.glPopMatrix();
 		}

@@ -48,7 +48,7 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
 	
 	public GLPanel(Context context) {
 		super(context);
-		// TODO ©“®¶¬‚³‚ê‚½ƒRƒ“ƒXƒgƒ‰ƒNƒ^[EƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Rï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½Nï¿½^ï¿½[ï¿½Eï¿½Xï¿½^ï¿½u
 		WindowManager wm = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
 		Display disp = wm.getDefaultDisplay();
 	 	
@@ -88,7 +88,7 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
 	}
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		int x = (int)event.getX();
 		int y = (int)event.getY();
 		TouchEvent touch_event = new TouchEvent();
@@ -118,12 +118,12 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
 		this.input_manager.setDatabase(list);
 	}
 	public void wakeup() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 			this.process_manager.wakeup();
 			this.process_manager.startState();
 	}
 	public void sleep() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.process_manager.sleep();
 	}
 	@Override
@@ -142,7 +142,7 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
                             Math.abs(accelerometerValues[1]) +
                             Math.abs(accelerometerValues[2]);
             //System.out.println(targetValue);
-            if(targetValue > 40.0f) {
+            if(targetValue > 30.0f) {
             	System.out.println("ok");
                 ShakeEvent shake = new ShakeEvent();
                 this.input_manager.pushEvent(shake);
@@ -151,11 +151,11 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
     }
 	@Override
 	public void onAccuracyChanged(Sensor arg0, int arg1) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		
 	}
 	public void showAleat() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.showing_alert_client = true;
 		this.showing_alert_host = false;
 		    handler.post(new Runnable() {
@@ -168,7 +168,7 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
 	}
 
 	public void showAlertForHost() {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		this.showing_alert_client = false;
 		this.showing_alert_host = true;
 		handler.post(new Runnable() {
@@ -180,7 +180,7 @@ public class GLPanel extends GLSurfaceView implements SensorEventListener,Dialog
 	}
 	@Override
 	public void onClick(DialogInterface dialog, int which) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		System.out.println("clicked"+which+":pointer"+dialog);
 		if(which == DialogInterface.BUTTON_POSITIVE){
 	        if(this.showing_alert_client == true){

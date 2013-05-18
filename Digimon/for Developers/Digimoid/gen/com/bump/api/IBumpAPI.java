@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/ychiba.kit.hlab/test/Digimoid/src/com/bump/api/IBumpAPI.aidl
+ * Original file: /Users/yuki/Projects/Git/Digimon OpenSource Project/Digimon/for Developers/Digimoid/src/com/bump/api/IBumpAPI.aidl
  */
 package com.bump.api;
 public interface IBumpAPI extends android.os.IInterface
@@ -23,13 +23,13 @@ public static com.bump.api.IBumpAPI asInterface(android.os.IBinder obj)
 if ((obj==null)) {
 return null;
 }
-android.os.IInterface iin = (android.os.IInterface)obj.queryLocalInterface(DESCRIPTOR);
+android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
 if (((iin!=null)&&(iin instanceof com.bump.api.IBumpAPI))) {
 return ((com.bump.api.IBumpAPI)iin);
 }
 return new com.bump.api.IBumpAPI.Stub.Proxy(obj);
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return this;
 }
@@ -116,7 +116,7 @@ Proxy(android.os.IBinder remote)
 {
 mRemote = remote;
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return mRemote;
 }
@@ -135,7 +135,7 @@ return DESCRIPTOR;
      *  userID: an ID that makes sense for this user in the context of your application. 
                 simpler apps often use the device's name or user's name. 
     */
-public void configure(java.lang.String key, java.lang.String userID) throws android.os.RemoteException
+@Override public void configure(java.lang.String key, java.lang.String userID) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -152,7 +152,7 @@ _data.recycle();
 }
 }
 /* Returns the other user's ID on a given channel, if it exists. */
-public java.lang.String userIDForChannelID(long channelID) throws android.os.RemoteException
+@Override public java.lang.String userIDForChannelID(long channelID) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -173,7 +173,7 @@ return _result;
 /* This will enable bump detection, which means you will
      * start getting MATCHED and NOT_MATCHED intents
      * (when the user actualy bumps) */
-public void enableBumping() throws android.os.RemoteException
+@Override public void enableBumping() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -188,7 +188,7 @@ _data.recycle();
 }
 }
 /* This will disable bump detection */
-public void disableBumping() throws android.os.RemoteException
+@Override public void disableBumping() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -204,7 +204,7 @@ _data.recycle();
 }
 /* Confirm a match with another user.
      * Should be sent in response to a MATCHED Intent */
-public void confirm(long channelID, boolean result) throws android.os.RemoteException
+@Override public void confirm(long channelID, boolean result) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -223,7 +223,7 @@ _data.recycle();
 /* Send data during to a channel.
      * Should only be called after receiving a
      * CHANNEL_CONFIRMED Intent */
-public void send(long channelID, byte[] data) throws android.os.RemoteException
+@Override public void send(long channelID, byte[] data) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -241,7 +241,7 @@ _data.recycle();
 }
 /**** FOR DEBUG ONLY ****
      * Trigger bump (as if the phone had actually bumped) */
-public void simulateBump() throws android.os.RemoteException
+@Override public void simulateBump() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
